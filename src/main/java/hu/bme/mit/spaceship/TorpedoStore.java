@@ -4,8 +4,6 @@ import java.util.Random;
 
 /**
 * Class storing and managing the torpedoes of a ship
-*
-* (Deliberately contains bugs.)
 */
 public class TorpedoStore {
 
@@ -28,6 +26,9 @@ public class TorpedoStore {
     }
   }
 
+  Random generator = new Random();
+  // Nem szeretném újrakezdeni, de review nélkül sikerült az elsőt bemergelni, szóval most ezt a kommentet kell reviewolni
+  
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       new IllegalArgumentException("numberOfTorpedos");
