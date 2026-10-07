@@ -29,7 +29,7 @@ public class TorpedoStore {
   }
 
   Random generator = new Random();
-
+  // Nem szeretném újrakezdeni, de review nélkül sikerült az elsőt bemergelni, szóval most ezt a kommentet kell reviewolni
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
